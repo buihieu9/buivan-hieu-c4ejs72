@@ -14,12 +14,12 @@ function run () {
 if(operators[Math.floor(Math.random()*operators.length)] === '+') {
     result = a + b;
     fakeResult = result + number[Math.floor(Math.random()*number.length)]
-       ramdomMatch.innerText = `${a} + ${b} = ${fakeResult}`   
+    ramdomMatch.innerText = `${a} + ${b} = ${fakeResult}`   
 }
 else {
     result = a - b;
     fakeResult = result + number[Math.floor(Math.random()*number.length)]
-       ramdomMatch.innerText = `${a} - ${b} = ${fakeResult}`
+    ramdomMatch.innerText = `${a} - ${b} = ${fakeResult}`
 }
 
 }
@@ -70,12 +70,10 @@ function timeDown() {
           x= 0
           point.innerText = x
           document.querySelector("#false-sound").play();
-         
         } else {
           width++;
           coutDown.style.width = width + "%";
         }
-      
     }
 }
 timeDown()
